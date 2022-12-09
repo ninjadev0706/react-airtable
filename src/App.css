@@ -1,0 +1,191 @@
+.App {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.content {
+  width: 100%;
+}
+
+.toolbar {
+  width: 100%;
+  padding-left: 20px;
+  position: fixed;
+  top: 8px;
+}
+
+.toolbar button {
+  font-size: 12px;
+  color: #333333;
+  text-transform:unset;
+  padding: 3.5px 7px;
+}
+
+.toolbar button:last-child {
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.toolbar button:last-child:hover {
+  background-color: white;
+}
+
+.toolbar button:last-child:focus {
+  background-color: white;
+}
+
+.toolbar button:last-child:target {
+  background-color: white;
+}
+
+
+.toolbar button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.table-head {
+  border-top: 1px solid #c8c8c8;
+  background-color: #f5f5f5 !important;
+  padding: 3.5px 0px !important;
+  padding-left: 15px !important;
+}
+.toolbar-dropdown{
+  width: 350px;
+  padding: 0 20px;
+}
+.text-field {
+  margin-bottom: 15px;
+  border-bottom-color: white !important;
+}
+
+.text-field input{
+  font-size: 13px;
+  padding: 10px 0;
+  
+}
+input:focus {
+  outline: none !important;
+}
+
+.hide-show-column {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.hide-show-column div span{
+  font-size: 13px !important;
+}
+.hide-show-column div svg {
+  width: 17px;
+  height: 17px;
+}
+.reorder-column {
+  justify-content: right;
+  cursor:grab;
+}
+.hideshowall {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.hideshowall-btn {
+  opacity: 0.75;
+  background-color: rgba(0,0,0,0.05) !important;
+  justify-content: center !important;
+  font-size: 11px;
+  border-radius: 3px;
+}
+.hide-all-btn {
+  margin-right: 10px !important;
+}
+.hideshowall-btn:hover {
+  opacity: 1;
+}
+
+.viewBarContainer {
+  height: 44px;
+}
+
+.table-cell {
+  background-color: white;
+}
+
+
+.MuiTableContainer-root::-webkit-scrollbar {
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+  background: #ddd;
+  width: 10px;
+  height: 10px;
+}
+
+.MuiTableContainer-root::-webkit-scrollbar-track {
+  z-index: 2;
+  background: #ddd;
+  border-radius: 20px;
+}
+ 
+.MuiTableContainer-root::-webkit-scrollbar-thumb {
+  z-index: 2;
+  background: #c7c7c7; 
+  border-radius: 20px;
+}
+.MuiTableContainer-root::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1; 
+}
+
+svg {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.dropdown-header ul li:hover {
+  background-color: #444;
+}
+
+#appTopbar {
+  color: white;
+}
+#viewBar {
+  padding-right: 15px;
+}
+
+#appControlsContainer {
+  background-color: #0f9d1f;
+  opacity: 0.9;
+}
+
+.find-hide-field {
+  margin-bottom: 13px;
+}
+
+.find-hide-field div svg {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.hide-show-column div span {
+  font-size: 13px !important;
+}
+
+.hide-field-column {
+  margin-left: -25px !important;
+}
+
+.table-footer {
+  color: black !important;
+  font-size: 11px !important;
+}
+
+#demo-customized-button svg {
+  color: gray;
+  vertical-align: sub;
+  margin-right: 5px;
+}
+
+#demo-customized-button {
+  font-size: 13px;
+}
