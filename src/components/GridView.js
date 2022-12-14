@@ -33,19 +33,37 @@ function GridView() {
   };
 
   const fetchData = async () => {
-    await axios.get(`https://cors-anywhere.herokuapp.com/https://22f9-65-109-22-190.eu.ngrok.io/`).then((response) => {
+    await axios.get(`https://cors-anywhere.herokuapp.com/https://22f9-65-109-22-190.eu.ngrok.io/`, {
+      headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json; charset=UTF-8',
+          'Access-Control-Allow-Origin': '*'
+      }
+  }).then((response) => {
       setRows(response.data);
     });
   };
 
   const fetchCol = async () => {
-    await axios.get(`https://cors-anywhere.herokuapp.com/https://22f9-65-109-22-190.eu.ngrok.io/columns`).then((response) => {
+    await axios.get(`https://cors-anywhere.herokuapp.com/https://22f9-65-109-22-190.eu.ngrok.io/columns`, {
+      headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json; charset=UTF-8',
+          'Access-Control-Allow-Origin': '*'
+      }
+  }).then((response) => {
       setColumns(response.data);
     });
   };
 
   const getRowLen = async () => {
-    await axios.get(`https://cors-anywhere.herokuapp.com/https://22f9-65-109-22-190.eu.ngrok.io/rowlen`).then((response) => {
+    await axios.get(`https://cors-anywhere.herokuapp.com/https://22f9-65-109-22-190.eu.ngrok.io/rowlen`, {
+      headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json; charset=UTF-8',
+          'Access-Control-Allow-Origin': '*'
+      }
+  }).then((response) => {
       setRowLen(response.data[0].len);
     });
   };

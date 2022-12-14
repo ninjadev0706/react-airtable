@@ -76,6 +76,11 @@ export default function Airtable(props) {
     if (columns && columns.length > 0) {
       await axios
         .post(`https://cors-anywhere.herokuapp.com/https://22f9-65-109-22-190.eu.ngrok.io/insertColumn`, {
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json; charset=UTF-8',
+            'Access-Control-Allow-Origin': '*'
+        },
           data: {
             col_id: col_id,
             col_order: col_order,
@@ -99,6 +104,11 @@ export default function Airtable(props) {
     if (columns && columns.length > 0) {
       await axios
         .post(`https://cors-anywhere.herokuapp.com/https://22f9-65-109-22-190.eu.ngrok.io/insertColumn`, {
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json; charset=UTF-8',
+            'Access-Control-Allow-Origin': '*'
+        },
           data: {
             col_id: col_id,
             col_order: col_order + 1,
