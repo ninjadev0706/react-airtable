@@ -75,7 +75,7 @@ export default function Airtable(props) {
     cell_content = customType;
     if (columns && columns.length > 0) {
       await axios
-        .post(`http://localhost:8080/insertColumn`, {
+        .post(`https://1226-65-109-22-190.eu.ngrok.io/insertColumn`, {
           data: {
             col_id: col_id,
             col_order: col_order,
@@ -98,7 +98,7 @@ export default function Airtable(props) {
     cell_content = customType;
     if (columns && columns.length > 0) {
       await axios
-        .post(`http://localhost:8080/insertColumn`, {
+        .post(`https://1226-65-109-22-190.eu.ngrok.io/insertColumn`, {
           data: {
             col_id: col_id,
             col_order: col_order + 1,

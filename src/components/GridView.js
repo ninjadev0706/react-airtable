@@ -33,19 +33,19 @@ function GridView() {
   };
 
   const fetchData = async () => {
-    await axios.get(`http://localhost:8080/`).then((response) => {
+    await axios.get(`https://1226-65-109-22-190.eu.ngrok.io/`).then((response) => {
       setRows(response.data);
     });
   };
 
   const fetchCol = async () => {
-    await axios.get(`http://localhost:8080/columns`).then((response) => {
+    await axios.get(`https://1226-65-109-22-190.eu.ngrok.io/columns`).then((response) => {
       setColumns(response.data);
     });
   };
 
   const getRowLen = async () => {
-    await axios.get(`http://localhost:8080/rowlen`).then((response) => {
+    await axios.get(`https://1226-65-109-22-190.eu.ngrok.io/rowlen`).then((response) => {
       setRowLen(response.data[0].len);
     });
   };
